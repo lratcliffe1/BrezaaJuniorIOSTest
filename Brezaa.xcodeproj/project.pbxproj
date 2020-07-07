@@ -3,27 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		15DD228E24B3949C002AA795 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD228D24B3949C002AA795 /* AppDelegate.swift */; };
 		15DD229024B3949C002AA795 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD228F24B3949C002AA795 /* SceneDelegate.swift */; };
-		15DD229224B3949C002AA795 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD229124B3949C002AA795 /* ViewController.swift */; };
+		15DD229224B3949C002AA795 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD229124B3949C002AA795 /* UsersViewController.swift */; };
 		15DD229524B3949C002AA795 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15DD229324B3949C002AA795 /* Main.storyboard */; };
 		15DD229724B3949C002AA795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15DD229624B3949C002AA795 /* Assets.xcassets */; };
 		15DD229A24B3949C002AA795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15DD229824B3949C002AA795 /* LaunchScreen.storyboard */; };
+		15DD22A424B474B2002AA795 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD22A224B474B2002AA795 /* UserCell.swift */; };
+		15DD22A524B474B2002AA795 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15DD22A324B474B2002AA795 /* UserCell.xib */; };
+		15DD22A824B4864C002AA795 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD22A724B4864C002AA795 /* UserDetailsViewController.swift */; };
+		750B058DD7A9C9A26FDA25EB /* Pods_Brezaa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90309252903AD6F44266A207 /* Pods_Brezaa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15DD228A24B3949C002AA795 /* Brezaa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brezaa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15DD228D24B3949C002AA795 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15DD228F24B3949C002AA795 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		15DD229124B3949C002AA795 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15DD229124B3949C002AA795 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		15DD229424B3949C002AA795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15DD229624B3949C002AA795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15DD229924B3949C002AA795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15DD229B24B3949C002AA795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15DD22A224B474B2002AA795 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		15DD22A324B474B2002AA795 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		15DD22A724B4864C002AA795 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		75681E1DAA7C9487CD1E94BE /* Pods-Brezaa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brezaa.debug.xcconfig"; path = "Target Support Files/Pods-Brezaa/Pods-Brezaa.debug.xcconfig"; sourceTree = "<group>"; };
+		90309252903AD6F44266A207 /* Pods_Brezaa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brezaa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F33CB08A0C96E6EE05494D27 /* Pods-Brezaa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brezaa.release.xcconfig"; path = "Target Support Files/Pods-Brezaa/Pods-Brezaa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				750B058DD7A9C9A26FDA25EB /* Pods_Brezaa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E9EC896A982FA558B576452 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90309252903AD6F44266A207 /* Pods_Brezaa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		15DD228124B3949C002AA795 = {
 			isa = PBXGroup;
 			children = (
 				15DD228C24B3949C002AA795 /* Brezaa */,
 				15DD228B24B3949C002AA795 /* Products */,
+				41AD64F036EB3FD90FF509E5 /* Pods */,
+				0E9EC896A982FA558B576452 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +79,41 @@
 			children = (
 				15DD228D24B3949C002AA795 /* AppDelegate.swift */,
 				15DD228F24B3949C002AA795 /* SceneDelegate.swift */,
-				15DD229124B3949C002AA795 /* ViewController.swift */,
-				15DD229324B3949C002AA795 /* Main.storyboard */,
+				15DD22A624B4861F002AA795 /* Controllers */,
+				15DD22A124B47467002AA795 /* Views */,
 				15DD229624B3949C002AA795 /* Assets.xcassets */,
 				15DD229824B3949C002AA795 /* LaunchScreen.storyboard */,
 				15DD229B24B3949C002AA795 /* Info.plist */,
 			);
 			path = Brezaa;
+			sourceTree = "<group>";
+		};
+		15DD22A124B47467002AA795 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15DD229324B3949C002AA795 /* Main.storyboard */,
+				15DD22A224B474B2002AA795 /* UserCell.swift */,
+				15DD22A324B474B2002AA795 /* UserCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15DD22A624B4861F002AA795 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				15DD229124B3949C002AA795 /* UsersViewController.swift */,
+				15DD22A724B4864C002AA795 /* UserDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		41AD64F036EB3FD90FF509E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75681E1DAA7C9487CD1E94BE /* Pods-Brezaa.debug.xcconfig */,
+				F33CB08A0C96E6EE05494D27 /* Pods-Brezaa.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15DD229E24B3949C002AA795 /* Build configuration list for PBXNativeTarget "Brezaa" */;
 			buildPhases = (
+				6A3B9522E13344E9F7757232 /* [CP] Check Pods Manifest.lock */,
 				15DD228624B3949C002AA795 /* Sources */,
 				15DD228724B3949C002AA795 /* Frameworks */,
 				15DD228824B3949C002AA795 /* Resources */,
+				01829C52EB83A4F16D6DA431 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15DD22A524B474B2002AA795 /* UserCell.xib in Resources */,
 				15DD229A24B3949C002AA795 /* LaunchScreen.storyboard in Resources */,
 				15DD229724B3949C002AA795 /* Assets.xcassets in Resources */,
 				15DD229524B3949C002AA795 /* Main.storyboard in Resources */,
@@ -133,12 +185,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01829C52EB83A4F16D6DA431 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brezaa/Pods-Brezaa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brezaa/Pods-Brezaa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brezaa/Pods-Brezaa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A3B9522E13344E9F7757232 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brezaa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		15DD228624B3949C002AA795 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15DD229224B3949C002AA795 /* ViewController.swift in Sources */,
+				15DD22A824B4864C002AA795 /* UserDetailsViewController.swift in Sources */,
+				15DD22A424B474B2002AA795 /* UserCell.swift in Sources */,
+				15DD229224B3949C002AA795 /* UsersViewController.swift in Sources */,
 				15DD228E24B3949C002AA795 /* AppDelegate.swift in Sources */,
 				15DD229024B3949C002AA795 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +378,7 @@
 		};
 		15DD229F24B3949C002AA795 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75681E1DAA7C9487CD1E94BE /* Pods-Brezaa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +397,7 @@
 		};
 		15DD22A024B3949C002AA795 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F33CB08A0C96E6EE05494D27 /* Pods-Brezaa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
